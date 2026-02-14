@@ -5,114 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quentin BOSIA | Game Designer / Game Developer</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Meta pour SEO basique -->
     <meta name="description" content="Portfolio Quentin BOSIA - Game Designer & Game Developer">
 </head>
 <body>
 
-    <!-- HEADER / NAVIGATION -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Quentin BOSIA</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projects.html">Projets</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Quentin BOSIA</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- HERO 
+<section class="hero">
+    <div class="hero-content">
+        <h2>Game Designer & Game Developer</h2>
+        <p>Je conçois et développe des expériences de jeu, du gameplay au level design.</p>
+        <a href="projects.html" class="btn">Voir mes projets</a>
+    </div>
+</section>
+-->
+<section class="hero-carousel">
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Game Designer & Game Developer</h2>
-            <p>
-                Je conçois et développe des expériences de jeu,
-                du gameplay au level design.
-            </p>
-            <a href="projects.html" class="btn">Voir mes projets</a>
-        </div>
-    </section>
+    <div class="slides">
+        <div class="slide active" style="background-image: url('assets/images/game1.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/images/game2.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/images/game3.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/images/game4.jpg');"></div>
+    </div>
 
-    <!-- PRÉSENTATION RAPIDE -->
-    <section class="intro">
-        <h3>Qui suis-je ?</h3>
+    <div class="hero-content">
+        <h2>Game Designer & Game Developer</h2>
         <p>
-            Passionné par le game design et le développement de jeux vidéo,
-            je travaille sur des projets personnels et collaboratifs
-            en utilisant des moteurs comme Unity / Unreal / Godot.
+            Je conçois et développe des expériences de jeu,
+            du gameplay au level design.
         </p>
-    </section>
+        <!--<a href="projects.html" class="btn">Voir mes projets</a>-->
+    </div>
 
-    <section class="skills">
-        <h3>Logiciels</h3>
-        <ul class="skills-grid">
-            <li class="skill-card">
-                <img src="assets/logos/Unity.svg" alt="Unity">
-                <span>Unity 3D</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/logos/Unreal.svg" alt="Unreal Engine">
-                <span>Unreal Engine 5</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/logos/Godot.svg" alt="Godot">
-                <span>Godot</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/logos/GitHub.svg" alt="GitHub">
-                <span>GitHub</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/logos/Blender.svg" alt="Blender">
-                <span>Blender</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/logos/PhotoShop.svg" alt="Photoshop">
-                <span>Photoshop</span>
-            </li>
-        </ul>
-    </section>
-    
-    <!-- COMPÉTENCES -->
-    <section class="skills">
-        <h3>Compétences</h3>
-        <ul class="skills-grid">
-            <li class="skill-card">Gameplay Design</li>
-            <li class="skill-card">Level Design</li>
-            <li class="skill-card">Prototypage</li>
-            <li class="skill-card">Programation Engine</li>
-            <li class="skill-card">Programation Gameplay</li>
-        </ul>
-    </section>
+</section>
 
-    <!-- Langaguage -->
-    <section class="skills">
-        <h3>Languages</h3>
-        <ul class="skills-grid">
-            <li class="skill-card">C#</li>
-            <li class="skill-card">C++</li>
-            <li class="skill-card">C</li>
-            <li class="skill-card">Python</li>
-            <li class="skill-card">GDScript</li>
-            <li class="skill-card">Php</li>
-            <li class="skill-card">JavaSCript</li>
-        </ul>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 - Ton Nom</p>
-        <div class="social-links">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">itch.io</a>
+<!-- CAROUSELS -->
+<section class="carousels">
+
+    <div class="carousel-block">
+        <h3>Mes Jeux</h3>
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="assets/images/game1.jpg">
+                <img src="assets/images/game2.jpg">
+                <img src="assets/images/game3.jpg">
+                <img src="assets/images/game4.jpg">
+                <img src="assets/images/game1.jpg">
+                <img src="assets/images/game2.jpg">
+            </div>
         </div>
-    </footer>
+        <a href="projects.html" class="btn small-btn">Voir tous les jeux</a>
+    </div>
+
+    <div class="carousel-block">
+        <h3>Mes Projets</h3>
+        <div class="carousel">
+            <div class="carousel-track slow">
+                <img src="assets/images/project1.jpg">
+                <img src="assets/images/project2.jpg">
+                <img src="assets/images/project3.jpg">
+                <img src="assets/images/project1.jpg">
+                <img src="assets/images/project2.jpg">
+            </div>
+        </div>
+        <a href="projects.html" class="btn small-btn">Voir tous les projets</a>
+    </div>
+
+</section>
+
+<section class="intro">
+    <h3>Qui suis-je ?</h3>
+    <p>
+        Passionné par le game design et le développement de jeux vidéo,
+        je travaille sur des projets personnels et collaboratifs.
+    </p>
+</section>
+
+<section class="skills">
+    <h3>Logiciels</h3>
+    <ul class="skills-grid">
+        <li class="skill-card"><img src="assets/logos/Unity.svg"><span>Unity 3D</span></li>
+        <li class="skill-card"><img src="assets/logos/Unreal.svg"><span>Unreal Engine 5</span></li>
+        <li class="skill-card"><img src="assets/logos/Godot.svg"><span>Godot</span></li>
+        <li class="skill-card"><img src="assets/logos/GitHub.svg"><span>GitHub</span></li>
+        <li class="skill-card"><img src="assets/logos/Blender.svg"><span>Blender</span></li>
+        <li class="skill-card"><img src="assets/logos/PhotoShop.svg"><span>Photoshop</span></li>
+    </ul>
+</section>
+
+<section class="skills">
+    <h3>Compétences</h3>
+    <ul class="skills-grid">
+        <li class="skill-card"><span>Gameplay Design</span></li>
+        <li class="skill-card"><span>Level Design</span></li>
+        <li class="skill-card"><span>Prototypage</span></li>
+        <li class="skill-card"><span>Programmation Engine</span></li>
+        <li class="skill-card"><span>Programmation Gameplay</span></li>
+    </ul>
+</section>
+
+<section class="skills">
+    <h3>Langages</h3>
+    <ul class="skills-grid">
+        <li class="skill-card"><span>C#</span></li>
+        <li class="skill-card"><span>C++</span></li>
+        <li class="skill-card"><span>C</span></li>
+        <li class="skill-card"><span>Python</span></li>
+        <li class="skill-card"><span>GDScript</span></li>
+        <li class="skill-card"><span>PHP</span></li>
+        <li class="skill-card"><span>JavaScript</span></li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 - Quentin BOSIA</p>
+
+    <div class="social-links">
+        <a href="https://github.com/Regoma" target="_blank">
+            <img src="assets/logos/GitHub.svg" alt="GitHub">
+        </a>
+
+        <a href="https://www.linkedin.com/in/quentin-bosia-921541199/" target="_blank">
+            <img src="assets/logos/Linkedin.svg" alt="LinkedIn">
+        </a>
+
+        <a href="https://regoma.itch.io/" target="_blank">
+            <img src="assets/logos/Itch.svg" alt="itch.io">
+        </a>
+    </div>
+</footer>
+
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
