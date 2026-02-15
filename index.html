@@ -15,9 +15,10 @@
         <h1 class="logo">Quentin BOSIA</h1>
         <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
+            <li><a href="games.html">Jeux</a></li>
             <li><a href="projects.html">Projets</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#about">À propos</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -50,6 +51,15 @@
 
 </section>
 
+<section class="intro">
+    <h3>Qui suis-je ?</h3>
+    <p>
+        Game développeur actuellement en master 2 Ingénierie du jeu vidéo et diplômé d'un 
+        Bachelor Game design & Creative coding, doté de solides bases en programmation pour 
+        le jeu vidéo, ainsi que des compétences en game et level design. Passionné par la création de jeux vidéo, 
+        je suis à la recherche d'opportunités pour mettre en pratique mes compétences et contribuer à des projets innovants dans l'industrie du jeu vidéo.
+    </p>
+</section>
 
 <!-- CAROUSELS -->
 <section class="carousels">
@@ -64,9 +74,11 @@
                 <img src="assets/images/game4.jpg">
                 <img src="assets/images/game1.jpg">
                 <img src="assets/images/game2.jpg">
+                <img src="assets/images/game3.jpg">
+                <img src="assets/images/game4.jpg">
             </div>
         </div>
-        <a href="projects.html" class="btn small-btn">Voir tous les jeux</a>
+        <a href="games.html" class="btn small-btn">Voir tous les jeux</a>
     </div>
 
     <div class="carousel-block">
@@ -76,8 +88,11 @@
                 <img src="assets/images/project1.jpg">
                 <img src="assets/images/project2.jpg">
                 <img src="assets/images/project3.jpg">
+                <img src="assets/images/project4.jpg">
                 <img src="assets/images/project1.jpg">
                 <img src="assets/images/project2.jpg">
+                <img src="assets/images/project3.jpg">
+                <img src="assets/images/project4.jpg">
             </div>
         </div>
         <a href="projects.html" class="btn small-btn">Voir tous les projets</a>
@@ -85,15 +100,9 @@
 
 </section>
 
-<section class="intro">
-    <h3>Qui suis-je ?</h3>
-    <p>
-        Passionné par le game design et le développement de jeux vidéo,
-        je travaille sur des projets personnels et collaboratifs.
-    </p>
-</section>
 
-<section class="skills">
+
+<section id="about" class="skills">
     <h3>Logiciels</h3>
     <ul class="skills-grid">
         <li class="skill-card"><img src="assets/logos/Unity.svg"><span>Unity 3D</span></li>
@@ -129,8 +138,19 @@
     </ul>
 </section>
 
-<footer>
-    <p>© 2026 - Quentin BOSIA</p>
+
+<footer id="contact">
+    <div class="footer-info">
+        <span class="footer-name">Contact:</span>
+
+        <a href="mailto:bosiaquentin@yahoo.fr" class="footer-link">
+            bosiaquentin@yahoo.fr
+        </a>
+
+        <a href="tel:+33783533475" class="footer-link">
+            +33&nbsp;7&nbsp;83&nbsp;53&nbsp;34&nbsp;75
+        </a>
+    </div>
 
     <div class="social-links">
         <a href="https://github.com/Regoma" target="_blank">
@@ -146,6 +166,7 @@
         </a>
     </div>
 </footer>
+
 
 
 <script src="js/main.js"></script>
