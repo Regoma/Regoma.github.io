@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// PROJECT CAROUSELS
+
 document.querySelectorAll(".project-carousel").forEach(carousel => {
 
     const images = carousel.querySelectorAll("img");
@@ -27,7 +27,7 @@ document.querySelectorAll(".project-carousel").forEach(carousel => {
 
 });
 
-// FULLSCREEN LIGHTBOX WITH ARROWS (FIXED ACTIVE IMAGE)
+
 
 document.querySelectorAll(".project-carousel").forEach(carousel => {
 
@@ -35,22 +35,21 @@ document.querySelectorAll(".project-carousel").forEach(carousel => {
 
     carousel.addEventListener("click", () => {
 
-        // 🔑 Trouver l'image actuellement visible
         let currentIndex = images.findIndex(img =>
             img.classList.contains("active")
         );
 
         if (currentIndex === -1) currentIndex = 0;
 
-        // Lightbox container
+
         const lightbox = document.createElement("div");
         lightbox.className = "lightbox";
 
-        // Image fullscreen
+
         const fullscreenImg = document.createElement("img");
         fullscreenImg.src = images[currentIndex].src;
 
-        // Flèches
+
         const leftArrow = document.createElement("div");
         leftArrow.className = "lightbox-arrow left";
         leftArrow.innerHTML = "&#10094;";
@@ -63,7 +62,7 @@ document.querySelectorAll(".project-carousel").forEach(carousel => {
             fullscreenImg.src = images[currentIndex].src;
         }
 
-        // Navigation
+
         leftArrow.addEventListener("click", (e) => {
             e.stopPropagation();
             currentIndex = (currentIndex - 1 + images.length) % images.length;
@@ -76,13 +75,12 @@ document.querySelectorAll(".project-carousel").forEach(carousel => {
             updateImage();
         });
 
-        // Append
         lightbox.appendChild(leftArrow);
         lightbox.appendChild(fullscreenImg);
         lightbox.appendChild(rightArrow);
         document.body.appendChild(lightbox);
 
-        // Close
+
         function closeLightbox() {
             lightbox.remove();
             document.removeEventListener("keydown", keyHandler);
