@@ -23,6 +23,6 @@ document.querySelectorAll(".project-carousel").forEach(carousel => {
         images[index].classList.remove("active");
         index = (index + 1) % images.length;
         images[index].classList.add("active");
-    }, 2500);
+    }, 3500);
 
 });

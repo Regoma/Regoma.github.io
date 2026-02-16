@@ -413,3 +413,18 @@ footer {
     color: var(--accent-color);
 }
 
+/* LISTES VERTICALES (Qualifications / Expériences) */
+
+.skills-list .skills-grid {
+    grid-template-columns: 1fr;
+}
+
+/* SKILL CARD CLIQUABLE */
+
+.skill-link {
+    display: block;
+}
+
+.skill-link .skill-card {
+    cursor: pointer;
+}
