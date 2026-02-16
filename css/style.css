@@ -120,6 +120,7 @@ section {
     grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
     gap:1rem;
     margin-top:2rem;
+    margin-bottom: 3rem;
 }
 
 .skill-card {
@@ -266,7 +267,7 @@ footer {
 /* PAGE PROJETS */
 
 .projects {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: auto;
     padding: 4rem 2rem;
     display: flex;
@@ -276,8 +277,8 @@ footer {
 
 .project {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 4rem;
     align-items: center;
 }
 
@@ -334,12 +335,53 @@ footer {
     opacity: 1;
 }
 
+/*
+.project-carousel img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}*/
+
+.project-carousel:hover img.active {
+    /*transform: scale(1.02);*/
+    filter: brightness(0.9);
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .project {
         grid-template-columns: 1fr;
     }
 }
+
+.projects section.project {
+    max-width: 100%;
+}
+
+/* LAYOUT ALTERNÉ */
+
+.project--reverse {
+    grid-template-columns: 1.6fr 1fr;
+}
+
+.project--reverse .project-text {
+    order: 2;
+}
+
+.project--reverse .project-media {
+    order: 1;
+}
+
+/* Mobile : tout repasse normal */
+@media (max-width: 900px) {
+    .project--reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .project--reverse .project-text,
+    .project--reverse .project-media {
+        order: initial;
+    }
+}
+
 
 /* BOUTON PROJET */
 .project-btn {
@@ -386,7 +428,15 @@ footer {
     color: var(--text-muted);
 }
 
+
+
+
 /* FOOTER INFO */
+
+footer
+{
+    margin-top: 3rem;
+}
 
 .footer-info {
     display: flex;
@@ -428,3 +478,70 @@ footer {
 .skill-link .skill-card {
     cursor: pointer;
 }
+
+/* LIGHTBOX FULLSCREEN */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 12, 18, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: zoom-out;
+}
+
+.lightbox img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+}
+
+/* FLÈCHES */
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    user-select: none;
+    padding: 1rem;
+    transition: color 0.2s ease;
+}
+
+.lightbox-arrow:hover {
+    color: var(--accent-color);
+}
+
+.lightbox-arrow.left {
+    left: 2rem;
+}
+
+.lightbox-arrow.right {
+    right: 2rem;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .lightbox-arrow {
+        font-size: 2.2rem;
+    }
+}
+
+/* Image cliquable */
+
+.project-carousel {
+    cursor: zoom-in;
+}
+
+.project-carousel img {
+    cursor: inherit;
+}
+
+.skills + .skills {
+    padding: 1rem 2rem;
+}
+    
