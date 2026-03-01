@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets | Quentin BOSIA</title>
+    <title>Projects | Quentin BOSIA</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -13,19 +13,19 @@
     <nav class="navbar">
         <h1 class="logo">Quentin BOSIA</h1>
         <ul class="nav-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="games.html">Jeux</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="index.html#about">À propos</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#contact">Contact</a></li>
             <div class="lang-switch">
-                <a href="projects.html" class="lang-item active">
-                    <img src="assets/logos/Fr.svg" alt="Français">
+                <a href="../projects.html" class="lang-item">
+                    <img src="../assets/logos/Fr.svg" alt="Français">
                     <span>FR</span>
                 </a>
 
-                <a href="en/projects.html" class="lang-item">
-                    <img src="assets/logos/En.svg" alt="English">
+                <a href="projects.html" class="lang-item active">
+                    <img src="../assets/logos/En.svg" alt="English">
                     <span>EN</span>
                 </a>
             </div>
@@ -38,19 +38,19 @@
     <!-- PROJET 1 -->
     <section class="project">
         <div class="project-text">
-            <h2>Moteur de rendu Raytracing</h2>
+            <h2>Ray tracing rendering engine</h2>
             <p class="project-role"><b>Prototype</b></p>
 
             <p>
-                Moteur de rendu Raytacing réalisé en C++, permettant de générer des images au format <b>.ppm</b>
+                Ray tracing rendering engine implemented in C++, generating images in <b>.ppm</b> format.
                 <br>
-                Le moteur peut créer des images de <b>depth buffer</b> ou des rendus de scène en <b>lumière directe et indirecte</b>, 
-                avec des matériaux réflectifs, du brouillard atmosphérique et de l'anti-aliasing.
+                The engine can generate <b>depth buffer</b> images as well as scene renders with <b>direct and indirect lighting</b>, 
+                with reflective materials, atmospheric fog, and anti-aliasing.
                 <br>
-                Il supporte les <b>primitives de base</b> (sphère, plan, triangle) ainsi que les meshes importés depuis des fichiers <b>.obj</b>.
+                It supports <b>basic primitives</b> (sphere, plane, triangle) as well as meshes imported from <b>.obj</b> files.
             </p>
             <ul class="project-details">
-                <li>Langage : C++</li>
+                <li>Language: C++</li>
             </ul>
             <a href="https://github.com/Regoma/Synthese_Image"
             target="_blank"
@@ -61,10 +61,10 @@
 
         <div class="project-media">
             <div class="project-carousel">
-                <img src="assets/images/Raytracing/RayTracing_00.jpg" class="active">
-                <img src="assets/images/Raytracing/RayTracing_01.jpg">
-                <img src="assets/images/Raytracing/RayTracing_02.jpg">
-                <img src="assets/images/Raytracing/RayTracing_03.jpg">
+                <img src="../assets/images/Raytracing/RayTracing_00.jpg" class="active">
+                <img src="../assets/images/Raytracing/RayTracing_01.jpg">
+                <img src="../assets/images/Raytracing/RayTracing_02.jpg">
+                <img src="../assets/images/Raytracing/RayTracing_03.jpg">
             </div>
         </div>
     </section>
@@ -76,10 +76,10 @@
             <p class="project-role"><b>Prototype</b></p>
 
             <p>
-                Générateur de mesh procédural, permettant de <b>créer des primitives</b> (plan, cylindre, sphère, cône) paramétrables.
+                Procedural mesh generator enabling the <b>creation of primitives</b> (plane, cylinder, sphere, cone) with configurable parameters.
             </p>
             <ul class="project-details">
-                <li>Langage : C#</li>
+                <li>Language: C#</li>
             </ul>
             <a href="https://github.com/Regoma/Modelisation_geometrique"
             target="_blank"
@@ -90,8 +90,8 @@
 
         <div class="project-media">
             <div class="project-carousel">
-                <img src="assets/images/Modelisation/MeshScreen_00.jpg" class="active">
-                <img src="assets/images/Modelisation/MeshScreen_01.gif">
+                <img src="../assets/images/Modelisation/MeshScreen_00.jpg" class="active">
+                <img src="../assets/images/Modelisation/MeshScreen_01.gif">
             </div>
         </div>
     </section>
@@ -99,14 +99,14 @@
             <!-- PROJET 2 -->
     <section class="project">
         <div class="project-text">
-            <h2>Décimation de maillage</h2>
+            <h2>Mesh Decimation</h2>
             <p class="project-role"><b>Prototype</b></p>
 
             <p>
-                Algorithme de <b>décimation de maillage</b>, permettant de réduire le nombre de triangles d'un mesh tout en conservant sa forme générale.
+                Mesh <b>decimation algorithm</b>, enabling the reduction of triangle count while preserving the overall shape.
             </p>
             <ul class="project-details">
-                <li>Langage : C#</li>
+                <li>Language: C#</li>
             </ul>
             <a href="https://github.com/Regoma/Modelisation_geometrique"
             target="_blank"
@@ -117,8 +117,8 @@
 
         <div class="project-media">
             <div class="project-carousel">
-                <img src="assets/images/Modelisation/LodScreen_00.gif" class="active">
-                <img src="assets/images/Modelisation/LodScreen_01.jpg">
+                <img src="../assets/images/Modelisation/LodScreen_00.gif" class="active">
+                <img src="../assets/images/Modelisation/LodScreen_01.jpg">
 
             </div>
         </div>
@@ -127,14 +127,14 @@
             <!-- PROJET 3 -->
     <section class="project project--reverse">
         <div class="project-text">
-            <h2>Reproduction Diorama</h2>
-            <p class="project-role"><b>Modélisation • Rendu 3D</b></p>
+            <h2>Diorama Reproduction</h2>
+            <p class="project-role"><b>Modeling • 3D rendering</b></p>
 
             <p>
-                Reproduction en une journée d'un <b>diorama low-poly</b> sur Blender.
+                Reproduction of a <b>low-poly diorama</b> in Blender, completed in one day.
             </p>
             <ul class="project-details">
-                <li>Logiciel : Blender</li>
+                <li>Software: Blender</li>
             </ul>
             <!--
             <a href="https://regoma.itch.io/nom-du-jeu"
@@ -146,8 +146,8 @@
 
         <div class="project-media">
             <div class="project-carousel">
-                <img src="assets/images/Blender/DioramaScreen_00.jpg" class="active">
-                <img src="assets/images/Blender/DioramaScreen_01.jpg">
+                <img src="../assets/images/Blender/DioramaScreen_00.jpg" class="active">
+                <img src="../assets/images/Blender/DioramaScreen_01.jpg">
             </div>
         </div>
     </section>
@@ -156,13 +156,13 @@
     <section class="project">
         <div class="project-text">
             <h2>Spy hotel room</h2>
-            <p class="project-role"><b>Modélisation • Rendu 3D</b></p>
+            <p class="project-role"><b>Modeling • 3D rendering</b></p>
 
             <p>
-                Blockout d'une chambre d'hôtel dans le sytle soviétique sur Blender.
+                Blockout of a Soviet-style hotel room created in Blender.
             </p>
             <ul class="project-details">
-                <li>Logiciel : Blender</li>
+                <li>Software: Blender</li>
             </ul>
             <!--
             <a href="https://regoma.itch.io/nom-du-jeu"
@@ -174,10 +174,10 @@
 
         <div class="project-media">
             <div class="project-carousel">
-                <img src="assets/images/Blender/RadioScreen_03.jpg" class="active">
-                <img src="assets/images/Blender/RadioScreen_00.jpg">
-                <img src="assets/images/Blender/RadioScreen_01.jpg">
-                <img src="assets/images/Blender/RadioScreen_02.jpg">
+                <img src="../assets/images/Blender/RadioScreen_03.jpg" class="active">
+                <img src="../assets/images/Blender/RadioScreen_00.jpg">
+                <img src="../assets/images/Blender/RadioScreen_01.jpg">
+                <img src="../assets/images/Blender/RadioScreen_02.jpg">
             </div>
         </div>
     </section>
@@ -199,19 +199,19 @@
 
     <div class="social-links">
         <a href="https://github.com/Regoma" target="_blank">
-            <img src="assets/logos/GitHub.svg" alt="GitHub">
+            <img src="../assets/logos/GitHub.svg" alt="GitHub">
         </a>
 
         <a href="https://www.linkedin.com/in/quentin-bosia-921541199/" target="_blank">
-            <img src="assets/logos/Linkedin.svg" alt="LinkedIn">
+            <img src="../assets/logos/Linkedin.svg" alt="LinkedIn">
         </a>
 
         <a href="https://regoma.itch.io/" target="_blank">
-            <img src="assets/logos/Itch.svg" alt="itch.io">
+            <img src="../assets/logos/Itch.svg" alt="itch.io">
         </a>
     </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
