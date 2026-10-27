@@ -150,6 +150,14 @@ section {
     color: var(--text-muted);
 }
 
+.hero-buttons{
+    margin-top:1.5rem;
+    display:flex;
+    gap:1rem;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
 /*CAROUSELS HOME*/
 
 .carousels {
