@@ -175,6 +175,24 @@ section {
     border: 1px solid #222;
 }
 
+.container {
+    overflow: hidden;
+    flex-direction: row;
+    display:flex;
+    padding: 1rem 0.5rem;
+    gap: 2rem;
+}
+.container img {
+    height: 180px;
+    display: flex;
+
+}
+
+.container iframe {
+    display: flex;
+
+}
+
 .carousel-track {
     display: flex;
     animation: scroll 25s linear infinite;
@@ -190,6 +208,7 @@ section {
     flex-shrink: 0;
     object-fit: cover;
 }
+
 
 @keyframes scroll {
     from { transform: translateX(0); }
